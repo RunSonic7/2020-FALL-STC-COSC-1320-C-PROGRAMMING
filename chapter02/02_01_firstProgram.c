@@ -19,5 +19,4 @@ int main(void)
 	printf("Welcome to C!\n");
 
 	return 0; /* Indicate that the program ended successfully */
-
 } /* End function main*/
