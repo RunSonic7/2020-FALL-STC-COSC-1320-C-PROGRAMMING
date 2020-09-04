@@ -58,6 +58,5 @@ int main(void)
     printf("Average is %d\n", average);
     printf("Product is %d\n", product);
 
-
-
-}
+    return 0; /* Indicate that the program ended successfully */
+} /* End function main */
