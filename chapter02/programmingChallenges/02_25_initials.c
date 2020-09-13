@@ -6,7 +6,6 @@
    Term: Fall 2020
    Institution: South Texas College
    Instructor: Mr. Joseph Perez
-   Date: 
    Due: Sunday, September 13, 2020
    Notes: Print your initials in block letters down the page. Construct each 
           block letter out of the letter it represents as shown below.  
