@@ -6,7 +6,6 @@
    Term: Fall 2020
    Institution: South Texas College
    Instructor: Mr. Joseph Perez
-   Date: 
    Due: Sunday, September 13, 2020 by 11:59PM CDT
    Notes: Here's a peek ahead. In this chapter you learned about integers and 
           the type int. C can also represent uppercase letters, lowercase 
@@ -25,3 +24,16 @@
 
           Write a C program that prints your name in ASCII representation.
 */
+#include <stdio.h>
+
+int main(void) 
+{
+   // First Name \n Last Name \n Suffix
+   printf("%d %d %d %d",'J','u','a','n'),
+   printf("\n");
+   printf("%d %d %d %d %d %d %d",'M','i','r','e','l','e','s'),
+   printf("\n");
+   printf("%d %d",'I','I');
+
+   return 0;
+} /* End of Function Main */
