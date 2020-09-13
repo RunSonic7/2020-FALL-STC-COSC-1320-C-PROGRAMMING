@@ -15,10 +15,6 @@
     Sum is 54
     Average is 18
     Product is 4914
-
-    Extra from book: Find Smallest and Largest number
-    Smallest is 13
-    Largest is 27
 */
 
 #include<stdio.h>
@@ -46,11 +42,7 @@ int main(void)
     if (sum % 3 >= 0.5) 
     {
         average = average + 1;
-    }
-
-    /* Determine largest/smallest number */
-    /* Need to work on */
-    
+    }  
 
     /* Display results to user */
     printf("Sum is %d\n", sum);
