@@ -6,8 +6,7 @@
    Term: Fall 2020
    Institution: South Texas College
    Instructor: Mr. Joseph Perez
-   Date: Friday, September 4, 2020
-   Due: Sunday, September 6, 2020
+   Due: Sunday, September 13, 2020
    Notes: Write a program that inputs three different integers from the keyboard
           then prints the sum, the average and the product. The screen dialog 
           should appear as follows:
