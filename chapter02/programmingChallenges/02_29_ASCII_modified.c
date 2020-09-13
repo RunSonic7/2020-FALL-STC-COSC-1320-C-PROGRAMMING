@@ -35,6 +35,6 @@ int main(void)
    printf("%d %d %d %d %d %d %d",'M','i','r','e','l','e','s'),
    printf("\n");
    printf("%d %d",'I','I');
-
+   printf("\n");
    return 0;
 } /* End of Function Main */
