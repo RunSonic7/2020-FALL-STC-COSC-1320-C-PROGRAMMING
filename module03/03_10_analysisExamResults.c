@@ -1,3 +1,14 @@
+/* Filename: 03_10_analysisExamResuls.c
+   Title:  Analysis of Examination Results
+   
+   Name: Juan Mireles II
+   Course: COSC 1320.V01 - C Programming
+   Term: Fall 2020
+   Institution: South Texas College
+   Instructor: Mr. Joseph Perez
+   Due: Sunday, September 20, 2020
+   Notes: Fig. 3.10: fig03_10.c
+*/
 #include <stdio.h>
 
 /* Function main begins program execution */
