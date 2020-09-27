@@ -10,17 +10,25 @@ Due: Sunday, September 27, 2020
 +---------------------------------+
 START
 
-DECLARE intermediateUpdateAverage
+SET intermediateUpdateAverage to 0
 SET gallonsEntered to 0
 SET milesDrivenEntered to 0
 SET gallonsStored to 0
 SET milesDrivenStored to 0
-DECLARE overallAverage
+SET overallAverage to 0
+
+DO
+	PROMPT to enter value for gallonsEntered and ASSIGN
+	VALIDATE input as not negative or zero excluding -1
+WHILE gallonsEntered is not valid
+
 
 WHILE gallonsEntered is not equal to -1
 
-	PROMPT to enter value for gallonsEntered and ASSIGN
-	PROMPT to enter value for milesDrivenEntered and ASSIGN
+	DO 
+		PROMPT to enter value for milesDrivenEntered and ASSIGN
+		VALIDATE input as not negative or zero
+	WHILE milesDrivenEntered input is not valid
 
 	ADD gallonsEntered to running total gallonsStored
 	ADD milesDrivenEntered to running total milesDrivenStored
@@ -29,6 +37,11 @@ WHILE gallonsEntered is not equal to -1
 		milesDrivenEntered by gallonsEntered
 
 	DISPLAY mpg for current tank
+
+	DO
+		PROMPT to enter value for gallonsEntered and ASSIGN
+		VALIDATE input as not negative or zero excluding -1
+	WHILE gallonsEntered is not valid
 
 EXIT WHILE
 
