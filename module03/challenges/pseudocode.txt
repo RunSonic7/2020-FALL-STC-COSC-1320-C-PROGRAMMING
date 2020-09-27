@@ -1,0 +1,98 @@
+Name: Juan Mireles II
+Course: COSC 1320.V01 - C Programming
+Term: Fall 2020
+Institution: South Texas College
+Instructor: Mr. Joseph Perez
+Due: Sunday, September 27, 2020
+
++---------------------------------+
+| Pseudocode for 3.16 Gas Mileage |
++---------------------------------+
+START
+
+DECLARE intermediateUpdateAverage
+SET gallonsEntered to 0
+SET milesDrivenEntered to 0
+SET gallonsStored to 0
+SET milesDrivenStored to 0
+DECLARE overallAverage
+
+WHILE gallonsEntered is not equal to -1
+
+	PROMPT to enter value for gallonsEntered and ASSIGN
+	PROMPT to enter value for milesDrivenEntered and ASSIGN
+
+	ADD gallonsEntered to running total gallonsStored
+	ADD milesDrivenEntered to running total milesDrivenStored
+
+	CALCULATE intermediateUpdateAverage dividing
+		milesDrivenEntered by gallonsEntered
+
+	DISPLAY mpg for current tank
+
+EXIT WHILE
+
+CALCULATE overallAverage by dividing milesStored by gallonsStored
+
+DISPLAY overallAverage
+
+END
+
+
++---------------------------------------------+
+| Pseudocode for 3.17 Credit-Limit Calculator |
++---------------------------------------------+
+START
+
+DECLARE acctNo
+DECLARE startingMonthBalance
+DECLARE appliedAsAcctCharges
+DECLARE appliedAsAcctCredits
+DECLARE updatedBalance
+DECLARE cardCreditLimit
+SET limitExceeded to FALSE
+
+PROMPT to enter account number
+	ASSIGN to acctNo
+PROMPT to enter balance for starting month
+	ASSIGN to startingMonthBalance
+PROMPT to enter monthly charges 
+	ASSIGN to appliedAsAcctCharges
+PROMPT to enter monthly credits 
+	ASSIGN to appliedAsAcctCredits
+PROMPT to enter limit of the credit card
+	ASSIGN to cardCreditLimit
+
+CALCULATE updatedBalance
+
+DISPLAY accnNo
+DISPLAY cardCreditLimit
+DISPLAY updatedBalance
+
+COMPARE updatedBalance is GREATER THAN cardCreditLimit
+
+	IF TRUE
+		DISPLAY “Credit Limit Exceeded”
+
+END
+
+SET isRightTriangle as FALSE
+SET sideA to 0
+SET sideB to 0
+SET sideC to 0
+DECLARE largestSide
+DECLARE legA
+DECLARE legB
+
+DETERMINE largestSide
+	
+
+
+DISPLAY
+
+START
+
+
+
+
+END
