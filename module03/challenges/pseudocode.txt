@@ -3,7 +3,7 @@ Course: COSC 1320.V01 - C Programming
 Term: Fall 2020
 Institution: South Texas College
 Instructor: Mr. Joseph Perez
-Due: Sunday, September 27, 2020
+Due: Sunday, September 27, 20
 
 +---------------------------------+
 | Pseudocode for 3.16 Gas Mileage |
