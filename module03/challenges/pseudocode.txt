@@ -67,27 +67,37 @@ DECLARE updatedBalance
 DECLARE cardCreditLimit
 SET limitExceeded to FALSE
 
-PROMPT to enter account number
-	ASSIGN to acctNo
-PROMPT to enter balance for starting month
-	ASSIGN to startingMonthBalance
-PROMPT to enter monthly charges 
-	ASSIGN to appliedAsAcctCharges
-PROMPT to enter monthly credits 
-	ASSIGN to appliedAsAcctCredits
-PROMPT to enter limit of the credit card
-	ASSIGN to cardCreditLimit
+DO 
+	PROMPT to enter account number
+		ASSIGN to acctNo
+WHILE not valid entry
 
-CALCULATE updatedBalance
+WHILE acctNo not -1
+	PROMPT to enter balance for starting month
+		ASSIGN to startingMonthBalance
+	PROMPT to enter monthly charges 
+		ASSIGN to appliedAsAcctCharges
+	PROMPT to enter monthly credits 
+		ASSIGN to appliedAsAcctCredits
+	PROMPT to enter limit of the credit card
+		ASSIGN to cardCreditLimit
 
-DISPLAY accnNo
-DISPLAY cardCreditLimit
-DISPLAY updatedBalance
+	CALCULATE updatedBalance
 
-COMPARE updatedBalance is GREATER THAN cardCreditLimit
+	DISPLAY accnNo
+	DISPLAY cardCreditLimit
+	DISPLAY updatedBalance
 
-	IF TRUE
-		DISPLAY “Credit Limit Exceeded”
+	COMPARE updatedBalance is GREATER THAN cardCreditLimit
+
+		IF TRUE
+			DISPLAY “Credit Limit Exceeded”
+
+	DO 
+		PROMPT to enter account number
+			ASSIGN to acctNo
+	WHILE not valid entry
+EXIT WHILE
 
 END
 
