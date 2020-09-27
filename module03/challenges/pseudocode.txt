@@ -1,3 +1,5 @@
+Title: Programming Challenges Module 3 Pseudocode
+
 Name: Juan Mireles II
 Course: COSC 1320.V01 - C Programming
 Term: Fall 2020
