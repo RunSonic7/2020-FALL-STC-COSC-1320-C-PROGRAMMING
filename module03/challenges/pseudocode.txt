@@ -91,23 +91,53 @@ COMPARE updatedBalance is GREATER THAN cardCreditLimit
 
 END
 
++-----------------------------------------------+
+| Pseudocode for 3.44 Sides of a Right Triangle |
++-----------------------------------------------+
+START
+
 SET isRightTriangle as FALSE
-SET sideA to 0
-SET sideB to 0
-SET sideC to 0
+SET isValid as TRUE
+DECLARE input1
+DELCARE input2
+DECLARE input3
 DECLARE largestSide
+DECLARE calculatedLargestSide
 DECLARE legA
 DECLARE legB
 
-DETERMINE largestSide
+DO
+	PROMPT input of 3 numbers.
+	VALIDATE input of 3 numbers
+	IF input1 is less than or equal to 0
+		THEN DISPLAY message not valid entry to user and isValid is FALSE
+	IF input3 is less than or equal to 0
+		THEN DISPLAY message not valid entry to user and isValid is FALSE
+	IF input3 is less than or equal to 0
+		THEN DISPLAY message not valid entry to user and isValid is FALSE
 	
+	IF isValid is FALSE
+		DISPLAY to have user reenter numbers again.
 
+WHILE any of the three numbers are less than or equal to 0
 
-DISPLAY
+DETERMINE largestSide
+	IF input1 is larger than input2 and input3
+		THEN input1 is largestSide, other two are legA and legB
+	ELSE IF input2 is larger than input1 and input3
+		THEN input2 is largestSide, other two are legA and legB
+	ELSE
+		THEN input3 is largestSide, other two are legA and legB
 
-START
+DETERMINE if values are a right triangle
+	CALCULATE calculatedLargestSide
+		calculatedLargestSide = legA^2 + legB^2
+	
+	IF (calculatedLargestSide == largestSide * largestSide)
+		THEN DISPLAY to user is a Right Triangle
+	ELSE
+		DISPLAY to user is NOT a Right Triangle
 
-
-
+DISPLAY to user whether or not triangle is a right triangle.
 
 END
