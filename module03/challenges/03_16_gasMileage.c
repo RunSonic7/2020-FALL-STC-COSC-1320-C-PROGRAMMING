@@ -29,34 +29,65 @@ int main(void)
          gallonsStored = 0.0,
          milesDrivenStored = 0.0;
 
-   /* User Input for gallons of gasoline */
-   printf("Please enter the number of gallons of gasoline (Type -1 to end): ");
-   scanf("%f", &gallonsEntered);
+   /* Error Checking, ensure value is not negative or zero but allow -1 */
+   /* Initial question as opt out -1 allowed in first line of question */
+   do
+   {
+      /* User Input for gallons of gasoline */
+      printf("Please enter the number of gallons of gasoline (Type -1 to end): ");
+      scanf("%f", &gallonsEntered);
 
+      /* Validate User Input */
+      if (gallonsEntered == 0 || gallonsEntered <= -2)
+      {
+         printf("Sorry, that is not a valid entry.\n\n");
+      }
+   } while (gallonsEntered == 0 || gallonsEntered <= -2);
+
+   /* Continue with questioning */
    while (gallonsEntered != -1)
    {
+      do
+      {
+         /* User input for miles of gallons driven */
+         printf("Please enter the number of miles you drove on this tank of gasoline: ");
+         scanf("%f", &milesDrivenEntered);
 
-      /* User input for miles of gallons driven */
-      printf("Please enter the number of miles you drove on this tank of gasoline: ");
-      scanf("%f", &milesDrivenEntered);
+         /* Validate user input */
+         if (milesDrivenEntered <= 0)
+         {
+            printf("Sorry, that is not a valid entry.\n\n");
+         }
+      } while (milesDrivenEntered <= 0);
 
+      /* Add to running total of gallons and miles */
       gallonsStored += gallonsEntered;
       milesDrivenStored += milesDrivenEntered;
 
+      /* Store and Display average for this set of inputs */
       intermediateUpdateAverage = milesDrivenEntered / gallonsEntered;
+      printf("The miles per gallon for this tank was %f\n\n", intermediateUpdateAverage);
 
-      printf("The miles / gallon for this tank was %f\n\n", intermediateUpdateAverage);
+      do
+      {
+         /* User Input for gallons of gasoline */
+         printf("Please enter the number of gallons of gasoline (Type -1 to end): ");
+         scanf("%f", &gallonsEntered);
 
-      /* User Input for gallons of gasoline */
-      printf("Please enter the number of gallons of gasoline: ");
-      scanf("%f", &gallonsEntered);
+         /* Validate User Input */
+         if (gallonsEntered == 0 || gallonsEntered <= -2)
+         {
+            printf("Sorry, entering zero is not allowed.\n\n");
+         }
+      } while (gallonsEntered == 0 || gallonsEntered <= -2);
    }
 
-   printf("\nMiles Driven %f\n", milesDrivenStored);
-   printf("Gallons Total %f\n\n", gallonsStored);
+   /* Display Totals and overall average to user */
+   printf("\n\nTOTALS\nMiles Driven: %f\n", milesDrivenStored);
+   printf("Gallons of Gas: %f\n\n", gallonsStored);
 
    overallAverage = milesDrivenStored / gallonsStored;
-   printf("The miles / gallon for this tank was %f", overallAverage);
+   printf("The overall average was %f miles per gallon.\n", overallAverage);
 
    return 0;
 }
