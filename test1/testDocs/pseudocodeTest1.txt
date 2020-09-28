@@ -20,7 +20,6 @@ SET isLeapYear to FALSE
 SET isValidDate to FALSE
 SET isValidMonth to FALSE
 SET isValidDay to FALSE
-SET isValidYear to FALSE -- may delete
 SET isBday to FALSE
 
 DISPLAY Welcome back Agent Mireles. Enter the requested information:
