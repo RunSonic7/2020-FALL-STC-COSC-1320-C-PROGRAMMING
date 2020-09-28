@@ -11,7 +11,7 @@ the current date's month, day and year.
 (e.g.
 What month is it? (enter as a number): 8
 What day is it? (enter as a number): 22
-What year is it? (enter as a number): 2020)
+What year is it? (enter as a number): 2020
 
 You will use those numbers to calculate YOUR real birthday and the program will 
 display YOUR current age. The program will display your age and based on the age
