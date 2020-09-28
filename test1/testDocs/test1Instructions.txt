@@ -1,0 +1,30 @@
+Test 1
+
+Create a directory on the linux server called test1. You must place the test in
+that directory and lose 5 points and I will organize the file in the appropriate
+folder.
+
+Write a program that will personally great you. (e.g. Welcome back agent Perez!)
+After greeting you, the program should prompt you for 3 numbers representing,
+the current date's month, day and year.
+
+(e.g.
+What month is it? (enter as a number): 8
+What day is it? (enter as a number): 22
+What year is it? (enter as a number): 2020)
+
+You will use those numbers to calculate YOUR real birthday and the program will 
+display YOUR current age. The program will display your age and based on the age
+the program calculated should display a response based on 3 possible conditions.
+
+(e.g.
+
+age below 18 display Spring C-hicken
+age above 18 below 25 Young C-hicken
+age above 25 Just a C-hicken)
+
+The program should also wish you a Happy Birthday! or a Happy Unbirhtday!
+
+You must turn in a flowchart or psuedocode for this test. The .c file should
+reside on the linux server by the due date in order not to lose any points. The
+flowchart or psuedocode should be uploaded to this assignment page.

@@ -1,0 +1,97 @@
+Title: Test 1 Pseudocode
+
+Name: Juan Mireles II
+Course: COSC 1320.V01 - C Programming
+Term: Fall 2020
+Institution: South Texas College
+Instructor: Mr. Joseph Perez
+Due: Sunday, September 27, 2020
+
+START
+
+DECLARE currentMonth
+DECLARE currentDay
+DECLARE currentYear
+DECLARE age
+SET monthBday to 6
+SET dayBDay to 2
+SET yearBDay to 1990
+SET isLeapYear to FALSE
+SET isValidDate to FALSE
+SET isValidMonth to FALSE
+SET isValidDay to FALSE
+SET isValidYear to FALSE -- may delete
+SET isBday to FALSE
+
+DISPLAY Welcome back Agent Mireles. Enter the requested information:
+
+DO
+
+    PROMPT to enter currentMonth
+    PROMPT to enter currentDay
+    PROMPT to enter currentYear 
+
+    CHECK leapyear
+        IF currentYear MOD by 4 is 0
+            THEN isLeapYear is true
+
+    VALIDATE currentMonth entry is between 1 and 12
+        IF valid 
+            isValidMonth is TRUE
+
+    VALIDATE currentDay entry is either between 1 and 30, 31, 
+             or if Febrauary 29 or 28
+        IF currentMonth is 1, 3, 5, 7, 8, 10 or 12
+            THEN entry must be between 1 and 31
+                IF valid
+                    isValidDay is TRUE
+        ELSEIF currentMonth is 4, 6, 9, 11
+            THEN entry must be between 1 and 30
+                IF valid
+                    isValidDay is TRUE
+        ELSE
+            IF isLeapYear is TRUE
+                THEN Entry is February and must between 1 and 29
+                    IF valid
+                        isValidDay is TRUE
+            ELSE 
+                THEN Entry is February and must between 1 and 28
+                    IF valid
+                        isValidDay is TRUE
+
+    DETERMINE isValidDate
+        isValidDate = isValidMonth AND isValidDay
+
+    DISPLAY to user to reinput information
+
+WHILE isValidDate is FALSE
+
+DETERMINE age
+    age is currentYear minus yearBDay
+
+    IF currentMonth is LESSTHAN monthBday
+        THEN Subtract 1 from age (birthday has not happened yet)
+    ELSEIF currentMonth is EQUALTO monthBday
+        THEN check day 
+        IF currentDay is EQUALTO dayBDay
+            THEN isBday is TRUE
+        ELSEIF currentDay is LESSTHAN dayBDay
+            THEN Subtract 1 from age (birthday has not happened yet)
+
+DETERMINE C-hicken type
+    IF age is LESSTHAN 18
+        DISPLAY Spring C-hicken and age
+    ELSEIF age is BETWEEN 18 and 25 exclusive
+        DISPLAY Young C-hicken and age
+    ELSE (age is GREATERTHAN or EQUALTO 25)
+        DISPLAY C-hicken and age
+
+DISPLAY Happy Birthday or Happy Unbirthday!
+    IF isBday is TRUE
+        DISPLAY Happy Birthday!!!
+    ELSE
+        DISPLAY Happy UN-Birthday!!!
+
+END
+
+NOTE: Instructions did not include for age 25.  Grouped age 25 with C-hicken
