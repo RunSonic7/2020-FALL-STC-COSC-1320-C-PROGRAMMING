@@ -1,5 +1,5 @@
 /* Filename: 04_05_forLoopSum.c
-   Title:  Counter Controlled Repetition with the for statement to sum numbers.
+   Title:  Summation with for loop.
    
    Name: Juan Mireles II
    Course: COSC 1320.V01 - C Programming
