@@ -24,6 +24,7 @@ int main(void)
 
     printf("Enter the letter grades.\n");
     printf("Enter the EOF character to end input.\n");
+    printf("CTRL + D on Linux/OSX and CTRL + Z on Windows.\n");
 
     /* loop until user types end-of-file key sequence */
     while ((grade = getchar()) != EOF)
