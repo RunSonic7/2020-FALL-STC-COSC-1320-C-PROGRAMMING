@@ -7,7 +7,7 @@
    Institution: South Texas College
    Instructor: Mr. Joseph Perez
    Due: Sunday, October 18, 2020
-   Notes: Fig. 5.14: fig05_14.c
+   Notes: Fig. 5.15: fig05_15.c
 */
 
 #include <stdio.h>
