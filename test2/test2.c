@@ -167,7 +167,7 @@ int determineHighestGrade(int number1, int number2, int number3)
    return highest;
 }
 
-int determineLowestGrade(number1, number2, number3)
+int determineLowestGrade(int number1, int number2, int number3)
 {
    printf("+------------------------------+\n"
       "|------- LOWEST GRADE ---------|\n"
