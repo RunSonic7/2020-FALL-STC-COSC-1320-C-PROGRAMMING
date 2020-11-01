@@ -45,6 +45,6 @@ grade. Do not display the highest grade in this function.
 
 Function 4: This function will receive 3 grades as parameters and returns the
 lowest grade to the main. The main will use that value to display the lowest
-grade. Do not display the highest grade in this function.
+grade. Do not display the lowest grade in this function.
 
 Use a loop to repeat the entire program until the users hits 5 to exit.
