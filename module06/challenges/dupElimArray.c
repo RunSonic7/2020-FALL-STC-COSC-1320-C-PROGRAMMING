@@ -15,15 +15,9 @@
           array to solve this problem.
 */
 
-// #include <iostream>
-// #include <array> // Required for use of arrays
-// #include <string>
-// #include "Validation.h"
-// using namespace std;
-
 #include <stdio.h>
 #include <stdbool.h>
-#define SIZE 5
+#define SIZE 20
 
 int main(void)
 {
