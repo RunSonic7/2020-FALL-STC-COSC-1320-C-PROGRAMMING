@@ -1,4 +1,4 @@
-/* Filename:
+/* Filename: dupElimArray.c
    Title:  Duplicate Elimination
 
    Name: Juan Mireles II
@@ -30,14 +30,15 @@ int main(void)
    // Variables
 
 
-   int userInput;
-   int values[SIZE];
+   int userInput;             // User Input value
+   int values[SIZE];          // Array
    bool isDuplicate;         // Determine if duplicate
    int counter = 0;          // Counter to keep track of overall input
    int arrayIncrementer = 0; // Counter to keep track of array index location
 
    while (counter < SIZE)
    {
+      // Validate use Input, only allow values 10 to 100 inclusive
       while (userInput < 10 || userInput > 100)
       {
          printf("Entry %d\n", counter + 1);
@@ -67,7 +68,6 @@ int main(void)
          arrayIncrementer++;
          values[arrayIncrementer - 1] = userInput;
       }
-
       counter++;
       userInput = 0;
    }
@@ -94,11 +94,11 @@ int main(void)
       printf("%d ", inputDataFinal[i]);
    }
 
-   // Display Array size which would equal incrementer value. 
-   printf("\nArray Size: %d\n", incrementer);
+   // Display Array size which would equal arrayIncrementer value. 
+   printf("\nArray Size: %d\n", arrayIncrementer);
 
    // Display message if all 20 values are unique, if not end line
-   if (arrayIncrementer == 20)
+   if (arrayIncrementer == SIZE)
    {
       printf("\nLooks like all your numbers are different!\n");
    }
