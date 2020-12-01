@@ -17,7 +17,7 @@
 
 #include <stdio.h>
 #include <stdbool.h>
-#define SIZE 20
+#define SIZE 5
 
 int main(void)
 {
@@ -25,7 +25,7 @@ int main(void)
 
 
    int userInput;             // User Input value
-   int values[SIZE];          // Array
+   int values[SIZE] = {0};          // Array
    bool isDuplicate;         // Determine if duplicate
    int counter = 0;          // Counter to keep track of overall input
    int arrayIncrementer = 0; // Counter to keep track of array index location
@@ -88,8 +88,8 @@ int main(void)
       printf("%d ", inputDataFinal[i]);
    }
 
-   // Display Array size which would equal arrayIncrementer value. 
-   printf("\nArray Size: %d\n", arrayIncrementer);
+   // Display Array size which would equal incrementer value. 
+   printf("\nArray Size: %d\n", incrementer);
 
    // Display message if all 20 values are unique, if not end line
    if (arrayIncrementer == SIZE)
