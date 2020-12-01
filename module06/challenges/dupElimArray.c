@@ -17,7 +17,7 @@
 
 #include <stdio.h>
 #include <stdbool.h>
-#define SIZE 5
+#define SIZE 20
 
 int main(void)
 {
