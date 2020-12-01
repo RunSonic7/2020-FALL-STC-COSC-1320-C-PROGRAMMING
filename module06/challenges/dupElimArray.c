@@ -22,8 +22,6 @@
 int main(void)
 {
    // Variables
-
-
    int userInput;             // User Input value
    int values[SIZE] = {0};          // Array
    bool isDuplicate;         // Determine if duplicate
