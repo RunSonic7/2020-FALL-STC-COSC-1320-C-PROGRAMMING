@@ -196,9 +196,6 @@ int main(void)
             printf("  %d|%d  ", i, seatingChart[i]);
         }
     } while (userChoice != 3);
-
-
-
     return 0;
 }
 
