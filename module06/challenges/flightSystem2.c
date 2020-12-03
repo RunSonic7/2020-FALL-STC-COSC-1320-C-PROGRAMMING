@@ -6,7 +6,7 @@
 
 void selectionPrompt();
 bool verifyAvailability(int[], int);
-
+void printTicket(int, int);
 
 int main(void)
 {
@@ -57,11 +57,32 @@ int main(void)
                 // Mark Seat
                 seatingChart[positionOpen] = 1;
             }
-            
-            
+
+
 
             break;
+        case 2:
+            for (int i = FC + 1; i <= ECO; i++)
+            {
+                if (seatingChart[i] == 0)
+                {
+                    isAvailable = true;
+                    positionOpen = i;
+                    break;
+                }
+                isAvailable = false;
+            }
 
+            if (isAvailable == false)
+            {
+                printf("No Economy Available!\n");
+            }
+            else
+            {
+                // Mark Seat
+                seatingChart[positionOpen] = 1;
+            }
+            break;
         default:
             break;
         }
@@ -94,3 +115,16 @@ void selectionPrompt(void)
         "[3] Exit System\n\n"
         "Your option: ");
 }
+
+void printTicket(int seatNo, int class)
+{
+    printf("+----------------------------------------------+\n"
+        "| B D   P |  AIRLINE: C AIRLINES               |\n"
+        "| O I   A |                                    |\n"
+        "| A N   S |  CLASS: %d                        |\n"
+        "| R G   S |  SEAT NO: %d                      |\n"
+        "+----------------------------------------------+\n", class, seatNo);
+}
+
+/* Source
+Strings https://www.geeksforgeeks.org/strings-in-c-2/ */
