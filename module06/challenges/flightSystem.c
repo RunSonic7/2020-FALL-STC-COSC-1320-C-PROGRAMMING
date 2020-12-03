@@ -217,4 +217,3 @@ void printTicket(int seatNo, int class)
         "| R G   S |  SEAT NO: %d                        |\n"
         "+----------------------------------------------+\n", class, seatNo);
 }
-
