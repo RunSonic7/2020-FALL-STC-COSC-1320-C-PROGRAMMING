@@ -2,7 +2,7 @@
    Title: Demonstrating the sizeof operator
 
    Name: Juan Mireles II
-   Course: COSC 1320.V01 - C Programming
+   Course: COSC 1320.V01 - C Programming 
    Term: Fall 2020
    Institution: South Texas College
    Instructor: Mr. Joseph Perez
