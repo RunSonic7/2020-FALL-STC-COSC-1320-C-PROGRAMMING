@@ -26,7 +26,7 @@
 #endif /* M_PI */
 
 /* prototypes */
-void optionMenu();
+void optionMenu(void);
 void circumference(double rad);
 void area(double rad);
 void volume(double rad);
@@ -67,7 +67,7 @@ int main(void)
 }
 
 /* functions */
-void optionMenu()
+void optionMenu(void)
 {
     printf("Please select an option\n"
         "[1] Circumference of Circle\n"
