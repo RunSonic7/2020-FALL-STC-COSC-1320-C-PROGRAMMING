@@ -1,12 +1,12 @@
-/* Filename:
-   Title:
+/* Filename: 07_32_pollingSurvey.c
+   Title:  Polling Program
 
    Name: Juan Mireles II
    Course: COSC 1320.V01 - C Programming
    Term: Fall 2020
    Institution: South Texas College
    Instructor: Mr. Joseph Perez
-   Due:
+   Due: Sunday, November 29, 2020 11:59 PM CT
    Notes: 7.32 (Polling) The Internet and the web are enabling more people to
           network, join a cause, voice opinions, and so on. The U.S.
           presidential candidates in 2008 used the Internet intensively to get

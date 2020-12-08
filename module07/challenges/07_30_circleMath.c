@@ -7,7 +7,7 @@
    Term: Fall 2020
    Institution: South Texas College
    Instructor: Mr. Joseph Perez
-   Due:
+   Due: Sunday, November 29, 2020 11:59 PM CT
    Notes: 7.30 Use the techniques you learned in Fig. 7.28, create a text-based,
           menu-driven program that allows the user to choose whether to
           calculate the circumference of a circle, the area of a circle or the
