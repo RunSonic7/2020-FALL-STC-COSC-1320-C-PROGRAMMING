@@ -58,7 +58,7 @@ void determineMax(int arrayReponses[5][10], int* maximum, int* position)
     }
 
     // Determine highest
-    for (i = 1; i < 5; i++)
+    for (i = 0; i < 5; i++)
     {
         if (holder[i] > max)
         {
@@ -71,36 +71,36 @@ void determineMax(int arrayReponses[5][10], int* maximum, int* position)
     *(position) = holderMaxPosition; /* Set position location */
 }
 
-// void determineMin(int arrayReponses[5][10], int* minimum, int* position)
-// {
-//     int holder[5] = { 0 };
-//     int sum = 0;
-//     int min;
-//     int i;
-//     int j;
-//     int holderMinPosition;
+void determineMin(int arrayReponses[5][10], int* minimum, int* position)
+{
+    int holder[5] = { 0 };
+    int sum = 0;
+    int min;
+    int i;
+    int j;
+    int holderMinPosition;
 
-//     for (i = 0; i < 5; i++)
-//     {
-//         sum = 0;
-//         for (j = 0; j < 10; j++)
-//         {
-//             sum = sum + (arrayReponses[i][j] * (j + 1));
-//         }
-//         holder[i] = sum;
-//         printf("%d\n", sum);
-//     }
+    for (i = 0; i < 5; i++)
+    {
+        sum = 0;
+        for (j = 0; j < 10; j++)
+        {
+            sum = sum + (arrayReponses[i][j] * (j + 1));
+        }
+        holder[i] = sum;
+        printf("%d\n", sum);
+    }
 
-//     // Determine highest
-//     for (i = 1; i < 5; i++)
-//     {
-//         if (holder[i] < min)
-//         {
-//             min = holder[i];
-//             holderMinPosition = i;
-//         }
-//     }
+    // Determine lowest
+    for (i = 0; i < 5; i++)
+    {
+        if (holder[i] < min)
+        {
+            min = holder[i];
+            holderMinPosition = i;
+        }
+    }
 
-//     *(minimum) = min; /* Set Max */
-//     *(position) = holderMinPosition; /* Set position location */
-// }
+    *(minimum) = min; /* Set Min */
+    *(position) = holderMinPosition; /* Set position location */
+}

@@ -44,6 +44,7 @@ int determineNumberOfTopics(char* array[]);
 
 double calculateAverageRating(int ratings[][10], int noOfSurvey, int index);
 void determineMax(int arrayReponses[5][10], int* maximum, int* position);
+void determineMin(int arrayReponses[5][10], int* minimum, int* position);
 
 int main(void)
 {
@@ -100,26 +101,23 @@ int main(void)
         printf("\n");
     } while (yesNo == 'Y' || yesNo == 'y');
 
-    // Print Report
+    /* Print Report */
     printReport(topics, headers, responses, numberOfSurveys);
 
-
     /* Highest point tally */
-
     determineMax(responses, &maxTallyAmount, &maxPosition);
     printf("\nHighest Rated Topic\n%s - %d Votes", topics[maxPosition - 1], maxTallyAmount);
-    //printf("\n\nFinal Max: %d", maxTallyAmount);
-    // printf("\nPosition Title: %s", topics[maxPosition - 1]);
 
-    // printf("\n\nFinal Min: %d", minTallyAmount);
-    // printf("\nPosition Title: %s", topics[minPosition - 1]);
-    //printReport(topics, headers, responses);
+    /* Lowest point tally */
+    determineMin(responses, &minTallyAmount, &minPosition);
+    printf("\n\nLowest Rated Topic\n%s - %d Votes\n", topics[minPosition], minTallyAmount);
 }
 
 void printReport(char* titles[], char* marks[], int score[][10], int numSurvey)
 {
     printf("----------------------- SURVEY RESULTS -----------------------------\n");
 
+    /* print ratings */
     printf("%27c", ' ');
     for (int i = 0; i < 11; i++)
     {
@@ -136,7 +134,7 @@ void printReport(char* titles[], char* marks[], int score[][10], int numSurvey)
         {
             printf("%3d", score[i][j]);
         }
-        // Average Score will go here
+        /* Average Score will go here */
         printf("   %.1f\n", calculateAverageRating(score, numSurvey, i));
 
     }
@@ -173,10 +171,9 @@ void determineMax(int arrayReponses[5][10], int* maximum, int* position)
             sum = sum + (arrayReponses[i][j] * (j + 1));
         }
         holder[i] = sum;
-        //printf("%d\n", sum);
     }
 
-    // Determine highest
+    /* Determine highest */
     for (i = 0; i < 5; i++)
     {
         if (holder[i] > max)
@@ -188,4 +185,37 @@ void determineMax(int arrayReponses[5][10], int* maximum, int* position)
 
     *(maximum) = max; /* Set Max */
     *(position) = holderMaxPosition; /* Set position location */
+}
+
+void determineMin(int arrayReponses[5][10], int* minimum, int* position)
+{
+    int holder[5] = { 0 };
+    int sum = 0;
+    int min;
+    int i;
+    int j;
+    int holderMinPosition;
+
+    for (i = 0; i < 5; i++)
+    {
+        sum = 0;
+        for (j = 0; j < 10; j++)
+        {
+            sum = sum + (arrayReponses[i][j] * (j + 1));
+        }
+        holder[i] = sum;
+    }
+
+    /* Determine lowest */
+    for (i = 0; i < 5; i++)
+    {
+        if (holder[i] < min)
+        {
+            min = holder[i];
+            holderMinPosition = i;
+        }
+    }
+
+    *(minimum) = min; /* Set Min */
+    *(position) = holderMinPosition; /* Set position location */
 }
