@@ -107,7 +107,6 @@ int main(void)
     /* Highest point tally */
 
     determineMax(responses, &maxTallyAmount, &maxPosition);
-
     printf("\nHighest Rated Topic\n%s - %d Votes", topics[maxPosition - 1], maxTallyAmount);
     //printf("\n\nFinal Max: %d", maxTallyAmount);
     // printf("\nPosition Title: %s", topics[maxPosition - 1]);
@@ -178,7 +177,7 @@ void determineMax(int arrayReponses[5][10], int* maximum, int* position)
     }
 
     // Determine highest
-    for (i = 1; i < 5; i++)
+    for (i = 0; i < 5; i++)
     {
         if (holder[i] > max)
         {
